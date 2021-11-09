@@ -9,6 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["./src/*"],
-    }
-  }
+    },
+  },
+  "exclude": ["jest.config.ts"]
 }
