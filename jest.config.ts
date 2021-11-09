@@ -10,4 +10,13 @@ export default {
   },
   preset: "ts-jest",
   testMatch: ["**/**/*.spec.ts", "**/**/**/*.spec.ts"],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "<rootDir>/src/*.ts",
+    "<rootDir>/src/**/*.ts",
+    "<rootDir>/src/**/**/*.ts",
+    "!<rootDir>/src/server.ts",
+  ],
+  coverageDirectory: "coverage",
+  coverageReporters: ["text-summary", "lcov"],
 }

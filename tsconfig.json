@@ -12,5 +12,5 @@
       "@src/*": ["./src/*"],
     },
   },
-  "exclude": ["jest.config.ts"]
+  "exclude": ["jest.config.ts", "coverage"]
 }

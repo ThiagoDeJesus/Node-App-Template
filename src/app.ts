@@ -19,8 +19,4 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(404).json({ message: "Page Not Found" })
 })
 
-app.use((err: Errback, req: Request, res: Response, next: NextFunction) => {
-  return res.status(500).json({ message: "Internal Error" })
-})
-
 export { app }
